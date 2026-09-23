@@ -6,14 +6,17 @@ import java.util.Scanner;
 import static java.lang.System.*;
 
 class IteratorTest {
+   ArrayList<String> sList;
    public static void populateListFromString(ArrayList<String> list, 
                                                         String strList){   
-
+      String[] words = strList.split(" ");
+      list = new ArrayList<String>(Arrays.asList(words));
+      
    }
 
    public static void addToListFromString(ArrayList<String> list, 
                                                         String strList)   {   
-
+      Iterator<String> iter = list.iterator();
    }
    
    /*** REMOVE ***/
